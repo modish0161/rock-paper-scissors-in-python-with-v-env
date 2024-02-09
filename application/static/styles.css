@@ -1,0 +1,60 @@
+body {
+    font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+#choices button {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #61dafb;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#choices button:hover {
+    background-color: #4fa8d8;
+    transform: scale(1.1);
+}
+
+#choices button:active {
+    transform: scale(0.9);
+}
+
+#result p {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #61dafb;
+}
+
+#game-result {
+    font-size: 24px;
+    color: #98c379;
+}
+
+/* Add some animation to the result for a dynamic effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#result {
+    animation: fadeIn 1s ease-out;
+}
